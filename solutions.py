@@ -6,3 +6,6 @@ def solution2(array):
 
 def solution3(array1, array2):
     return 0
+
+def solution4(a, b):
+    return 0

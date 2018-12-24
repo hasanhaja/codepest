@@ -1,9 +1,9 @@
 from solutions import solution1
 from solutions import solution2
 from solutions import solution3
+from solutions import solution4
 
 def test(boolean_condition):
-    # System.out.println("Input " + (count++) + ": " + (result ? "OK" : "FAIL!"));
     if boolean_condition:
         print("OK")
     else:
@@ -30,10 +30,19 @@ def challenge3():
     test(solution3(["a", "c", "f"], ["a", "b", "d"]) == 4)
     print("x----------END OF CHALLENGE----------x")
 
+def challenge4():
+    print("x------------Challenge 4------------x")
+    test(solution4(3, 4) == 5)
+    test(solution4(8, 6) == 10)
+    test(solution4(5, 12) == 13)
+    print("x----------END OF CHALLENGE----------x")
+
 def main():
 
     challenge1()
     challenge2()
+    challenge3()
+    challenge4()
 
 if __name__ == '__main__':
     main()
